@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppStudy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="480" Width="800">
     <Grid>
-        
+        <DataGrid x:Name="grid" FontSize="24">
+
+        </DataGrid>
+        <TextBox x:Name="tb_Name" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Margin="10,0,690,10" />
+        <Label Content="Product Name" HorizontalAlignment="Left" Margin="17,0,0,33" VerticalAlignment="Bottom" RenderTransformOrigin="1.122,-0.307"/>
+        <TextBox x:Name="tb_Price" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Margin="133,0,567,10" />
+        <Label Content="Product Price" HorizontalAlignment="Left" Margin="143,0,0,33" VerticalAlignment="Bottom" RenderTransformOrigin="1.122,-0.307"/>
+        <Button x:Name="b_add" Content="Add" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="255,0,445,9" Click="AddClick"/>
     </Grid>
 </Window>
